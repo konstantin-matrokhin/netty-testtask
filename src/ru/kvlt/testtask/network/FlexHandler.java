@@ -19,7 +19,6 @@ public class FlexHandler extends SimpleChannelInboundHandler<ByteBuf> {
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, ByteBuf byteBuf) throws Exception {
-
     }
 
 }
