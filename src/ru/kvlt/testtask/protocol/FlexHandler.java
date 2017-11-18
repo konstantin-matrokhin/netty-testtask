@@ -1,9 +1,9 @@
-package ru.kvlt.testtask.network;
+package ru.kvlt.testtask.protocol;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
-import ru.kvlt.testtask.Log;
+import ru.kvlt.testtask.utils.Log;
 
 public class FlexHandler extends SimpleChannelInboundHandler<ByteBuf> {
 

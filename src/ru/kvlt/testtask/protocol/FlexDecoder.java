@@ -1,14 +1,11 @@
-package ru.kvlt.testtask.network;
+package ru.kvlt.testtask.protocol;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufUtil;
-import io.netty.buffer.Unpooled;
-import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.ByteToMessageDecoder;
-import ru.kvlt.testtask.Log;
+import ru.kvlt.testtask.utils.Log;
 
-import java.io.IOException;
 import java.util.List;
 
 public class FlexDecoder extends ByteToMessageDecoder {

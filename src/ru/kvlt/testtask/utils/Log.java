@@ -1,4 +1,4 @@
-package ru.kvlt.testtask;
+package ru.kvlt.testtask.utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

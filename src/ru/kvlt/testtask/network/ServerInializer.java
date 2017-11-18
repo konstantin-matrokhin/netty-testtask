@@ -1,12 +1,12 @@
-package ru.kvlt.testtask;
+package ru.kvlt.testtask.network;
 
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
-import ru.kvlt.testtask.network.FlexDecoder;
-import ru.kvlt.testtask.network.FlexEncoder;
-import ru.kvlt.testtask.network.FlexHandler;
+import ru.kvlt.testtask.protocol.FlexDecoder;
+import ru.kvlt.testtask.protocol.FlexEncoder;
+import ru.kvlt.testtask.protocol.FlexHandler;
 
 public class ServerInializer extends ChannelInitializer<SocketChannel> {
 

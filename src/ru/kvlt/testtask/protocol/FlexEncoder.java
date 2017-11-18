@@ -1,9 +1,9 @@
-package ru.kvlt.testtask.network;
+package ru.kvlt.testtask.protocol;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToByteEncoder;
-import ru.kvlt.testtask.Packet;
+import ru.kvlt.testtask.network.Packet;
 
 public class FlexEncoder extends MessageToByteEncoder<Packet> {
 
