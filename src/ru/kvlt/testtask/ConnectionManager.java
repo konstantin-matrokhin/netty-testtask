@@ -50,10 +50,12 @@ public class ConnectionManager {
                     .childOption(ChannelOption.TCP_NODELAY, true)
                     .childHandler(new ServerInializer());
 
+            String serverInfo = String.format("[SOCKET = %s, PORT = %d]", channelClass.getSimpleName(), port);
+
             channelFuture = bootstrap.bind(port).sync();
             channelFuture.addListener((future) -> Log.info(
                     future.isSuccess()
-                            ? "Сервер запущен, порт " + port
+                            ? "Сервер запущен. " + serverInfo
                             : "Не удалось запустить сервер: " + future.cause()
                     )
             );
